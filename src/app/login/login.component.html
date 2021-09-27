@@ -1,0 +1,11 @@
+<div class="main">
+    <p class="sign" align="center">Sign in with GitHub Credentials</p>
+    <form class="form1"  #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <input class="un " ngModel required name="username"  id="username" type="text" align="center" placeholder="Username">
+      <input class="pass" ngModel required name="password" id="password" type="password" align="center" placeholder="Password">
+      <button class="submit" type="button" routerLinkActive [routerLink]="['/user']" value="submit" align="center">Sign in</button>  
+      <!-- <hr width="80%">
+      <p class="orText">or</p>
+      <p class="signInGit"><a (click)="signInGit('Erikagam')">Sign in with Github</a></p> -->
+    </form>         
+</div>
